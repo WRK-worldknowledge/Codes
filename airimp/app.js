@@ -44,7 +44,8 @@ function startGame(){
  score=0; i=0; time=60;
  timer=setInterval(tick,1000);
  initTilt();
-showCountdownThenStart();
+  maybeRunCountdown();
+show();
 }
 
 function tick(){
@@ -160,9 +161,21 @@ function handleTilt(e){
    tiltLocked = true;
    skip();
  }
-  function showCountdownThenStart() {
-  let count = 5;
+  let countdownUsed = false;
+
+function maybeRunCountdown() {
+  if (countdownUsed) return;
+  countdownUsed = true;
+
   const codeEl = document.getElementById('code');
+  let count = 5;
+
+  const originalShow = show;
+
+  show = function() {
+    if (count > 0) return;
+    originalShow();
+  };
 
   codeEl.innerText = "Starting in 5";
 
@@ -178,8 +191,9 @@ function handleTilt(e){
       if (navigator.vibrate) navigator.vibrate([80, 40, 80]);
 
       setTimeout(() => {
-        show(); // normal game flow resumes
-      }, 500);
+        count = 0;
+        originalShow();
+      }, 400);
     }
   }, 1000);
 }
