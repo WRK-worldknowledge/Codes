@@ -1,0 +1,854 @@
+[
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "As Soon As Possible",
+    "code": "ASAP"
+  },
+  {
+    "module": "Cargo",
+    "country": "AIRIMP",
+    "city": "Animal Vivant in Hold (huisdier boven de 8 kg)",
+    "code": "AVIH"
+  },
+  {
+    "module": "Passenger",
+    "country": "AIRIMP",
+    "city": "Blind; pap die blind of slechtziend is",
+    "code": "BLND"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Babybasket",
+    "code": "BSCT"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Bulky Baggage, zware bagage",
+    "code": "BULK"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Geanuleerde vlucht",
+    "code": "CANX"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Cabin Bagage",
+    "code": "CBBG"
+  },
+  {
+    "module": "Passenger",
+    "country": "AIRIMP",
+    "city": "Deaf; pap die doof is",
+    "code": "DEAF"
+  },
+  {
+    "module": "Security",
+    "country": "AIRIMP",
+    "city": "Deportee, algemeen.  Een uitzetting van een persoon",
+    "code": "DEPO"
+  },
+  {
+    "module": "Security",
+    "country": "AIRIMP",
+    "city": "Deportee Accompanied, begeleiding KMAR",
+    "code": "DEPA"
+  },
+  {
+    "module": "Security",
+    "country": "AIRIMP",
+    "city": "Deportee Unaccompanied, geen begeleidiNg",
+    "code": "DEPU"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Extra Seat",
+    "code": "EXST"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Fragile baggage",
+    "code": "FRAG"
+  },
+  {
+    "module": "Passenger",
+    "country": "AIRIMP",
+    "city": "Inadmissible passenger, wordt een land niet binnengelaten",
+    "code": "INAD"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Late incoming Aircraft",
+    "code": "LIAC"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Last Minute Change",
+    "code": "LMC"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Meet and Assist",
+    "code": "MAAS"
+  },
+  {
+    "module": "Safety",
+    "country": "AIRIMP",
+    "city": "Medical Case",
+    "code": "MEDA"
+  },
+  {
+    "module": "Passenger",
+    "country": "AIRIMP",
+    "city": "Passenger Name Record",
+    "code": "PNR"
+  },
+  {
+    "module": "Passenger",
+    "country": "AIRIMP",
+    "city": "Passenger with Reduced Mobility",
+    "code": "PRM"
+  },
+  {
+    "module": "Passenger",
+    "country": "AIRIMP",
+    "city": "Passenger with disability",
+    "code": "PWD"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Pet in Cabin, klein huisdier vervoerd in de Cabine",
+    "code": "PETC"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Seaman/zeeman die reist voor de zaak, de rederij",
+    "code": "SEMN"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Transit Without Visa, overstap zonder visum",
+    "code": "TWOV"
+  },
+  {
+    "module": "Passenger",
+    "country": "AIRIMP",
+    "city": "Unaccompanied Minor (UM, variërend tussen 5 t/m 13 jaar)",
+    "code": "UMNR"
+  },
+  {
+    "module": "Passenger",
+    "country": "AIRIMP",
+    "city": "Wheelchair for Carry on, Carry off, pap is immobiel",
+    "code": "WCHC"
+  },
+  {
+    "module": "Passenger",
+    "country": "AIRIMP",
+    "city": "Wheelchair for Ramp, pap kan geen lange afstanden lopen",
+    "code": "WCHR"
+  },
+  {
+    "module": "Passenger",
+    "country": "AIRIMP",
+    "city": "Wheelchair for Steps/Stairs pap kan stukjes lopen, geen trappen",
+    "code": "WCHS"
+  },
+  {
+    "module": "Passenger",
+    "country": "AIRIMP",
+    "city": "Wheelchair on Board",
+    "code": "WCOB"
+  },
+  {
+    "module": "Passenger",
+    "country": "AIRIMP",
+    "city": "Wheelchair Manually Powered",
+    "code": "WCMP"
+  },
+  {
+    "module": "Passenger",
+    "country": "AIRIMP",
+    "city": "Wheelchair Battery Dry",
+    "code": "WCBD"
+  },
+  {
+    "module": "Passenger",
+    "country": "AIRIMP",
+    "city": "Wheelchair Battery Wet",
+    "code": "WCBW"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Excess Baggage, overbagage",
+    "code": "XBAG"
+  },
+  {
+    "module": "Meals",
+    "country": "AIRIMP",
+    "city": "Asian Vegetarian Meal",
+    "code": "AVML"
+  },
+  {
+    "module": "Meals",
+    "country": "AIRIMP",
+    "city": "Baby Meal (0 tot 2 jaar)",
+    "code": "BBML"
+  },
+  {
+    "module": "Meals",
+    "country": "AIRIMP",
+    "city": "Child Meal (2 tot 12 jaar)",
+    "code": "CHML"
+  },
+  {
+    "module": "Meals",
+    "country": "AIRIMP",
+    "city": "Diabetic Meal",
+    "code": "DBML"
+  },
+  {
+    "module": "Meals",
+    "country": "AIRIMP",
+    "city": "Gluten Free Meal",
+    "code": "GFML"
+  },
+  {
+    "module": "Meals",
+    "country": "AIRIMP",
+    "city": "Hindu Meal, Hindoe maaltijd",
+    "code": "HNML"
+  },
+  {
+    "module": "Meals",
+    "country": "AIRIMP",
+    "city": "Low Fat Meal, Low Cholesterol",
+    "code": "LFML"
+  },
+  {
+    "module": "Meals",
+    "country": "AIRIMP",
+    "city": "Low Sodium Meal",
+    "code": "LSML"
+  },
+  {
+    "module": "Meals",
+    "country": "AIRIMP",
+    "city": "Kosher Meal, Joodse maaltijd",
+    "code": "KSML"
+  },
+  {
+    "module": "Meals",
+    "country": "AIRIMP",
+    "city": "Muslim Meal",
+    "code": "MOML"
+  },
+  {
+    "module": "Meals",
+    "country": "AIRIMP",
+    "city": "Non-Lactose Meal",
+    "code": "NLML"
+  },
+  {
+    "module": "Meals",
+    "country": "AIRIMP",
+    "city": "Raw Vegetarian Meal (voor veganisten)",
+    "code": "RVML"
+  },
+  {
+    "module": "Meals",
+    "country": "AIRIMP",
+    "city": "Sea Food Meal",
+    "code": "SFML"
+  },
+  {
+    "module": "Meals",
+    "country": "AIRIMP",
+    "city": "Special Meal",
+    "code": "SPML"
+  },
+  {
+    "module": "Meals",
+    "country": "AIRIMP",
+    "city": "Strict Vegetarian Meal,  geen dierlijke producten (ook voor vegan)",
+    "code": "VGML"
+  },
+  {
+    "module": "Meals",
+    "country": "AIRIMP",
+    "city": "Western Vegetarian Meal, lacto ovo meal. Geen vlees en vis maar wel zuivel en eieren",
+    "code": "VLML"
+  },
+  {
+    "module": "Passenger",
+    "country": "AIRIMP",
+    "city": "Advanced Passenger Info, info over paspoort, passagier",
+    "code": "API"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Child, kind van 2 tot 12 jaar",
+    "code": "CHD"
+  },
+  {
+    "module": "Passenger",
+    "country": "AIRIMP",
+    "city": "Commercial Important Passenger",
+    "code": "CIP"
+  },
+  {
+    "module": "Passenger",
+    "country": "AIRIMP",
+    "city": "Receipt for the passenger for checked-in luggage",
+    "code": "CLAIMTAG"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Corresponding Flight, passagier haalt de overstap",
+    "code": "COR"
+  },
+  {
+    "module": "Operations",
+    "country": "AIRIMP",
+    "city": "Contactdetails",
+    "code": "CTC"
+  },
+  {
+    "module": "Operations",
+    "country": "AIRIMP",
+    "city": "Daylight Saving Time, zomertijd",
+    "code": "DST"
+  },
+  {
+    "module": "Operations",
+    "country": "AIRIMP",
+    "city": "First piece of baggage on the luggage belt (arrivals)",
+    "code": "FIBAG"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Intercontinentaal",
+    "code": "ICA"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Infant, baby van 0 tot 2 jaar",
+    "code": "INF"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Koninklijke Marechaussee",
+    "code": "KMAR"
+  },
+  {
+    "module": "Operations",
+    "country": "AIRIMP",
+    "city": "Last piece of baggage on the luggage belt (arrivals)",
+    "code": "LABAG"
+  },
+  {
+    "module": "Operations",
+    "country": "AIRIMP",
+    "city": "Minimum Connecting Time",
+    "code": "MCT"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "No Connection, passagier haalt de overstap niet.",
+    "code": "NOC"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Notification to Captain",
+    "code": "NOTOC"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "No Seat (Infant) (Ticket status)",
+    "code": "NS"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Open, (Ticket status)",
+    "code": "OPEN"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "OK, (Ticket status)",
+    "code": "OK"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Passagier",
+    "code": "PAP"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Passagiers",
+    "code": "PAX"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Property Irregularity Report, formulier voor vermiste bagage",
+    "code": "PIR"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Requested, wachtlijst passagier (Ticket status)",
+    "code": "RQ"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Seat Available, IPB (Indien Plaats Beschikbaar) (Ticket status)",
+    "code": "SA"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Short Connection; Passagier heeft korte overstaptijd",
+    "code": "SHOCON"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Travel Information Manual",
+    "code": "TIM"
+  },
+  {
+    "module": "Operations",
+    "country": "AIRIMP",
+    "city": "Universal Time Coordinated, tijdzone op aarde. De “0”tijd",
+    "code": "UTC"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Very Important Person",
+    "code": "VIP"
+  },
+  {
+    "module": "Passenger",
+    "country": "AIRIMP",
+    "city": "Young Passenger (YP, variërend tussen 12 tot 16 jaar)",
+    "code": "YP"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Benaming van UTC tijd",
+    "code": "ZULU"
+  },
+  {
+    "module": "Operations",
+    "country": "AIRIMP",
+    "city": "Actual Time of Arrival",
+    "code": "ATA"
+  },
+  {
+    "module": "Operations",
+    "country": "AIRIMP",
+    "city": "Actual Time of Departure",
+    "code": "ATD"
+  },
+  {
+    "module": "Operations",
+    "country": "AIRIMP",
+    "city": "Estimated Block Time",
+    "code": "EBT"
+  },
+  {
+    "module": "Operations",
+    "country": "AIRIMP",
+    "city": "Estimated Time of Departure",
+    "code": "ETD"
+  },
+  {
+    "module": "Operations",
+    "country": "AIRIMP",
+    "city": "Estimated Time of Arrival",
+    "code": "ETA"
+  },
+  {
+    "module": "Operations",
+    "country": "AIRIMP",
+    "city": "Scheduled Time of Departure",
+    "code": "STD"
+  },
+  {
+    "module": "Operations",
+    "country": "AIRIMP",
+    "city": "Scheduled Time of Arrival",
+    "code": "STA"
+  },
+  {
+    "module": "Passenger",
+    "country": "AIRIMP",
+    "city": "Able Bodied Passenger",
+    "code": "ABP"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Aircraft",
+    "code": "A/C"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Aft part of the Cabin, achterste gedeelte van een vliegtuig",
+    "code": "AFT"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Aircraft Maintenance Log, logboek van een vliegtuig waar de defecten van het vliegtuig in vermeld staan",
+    "code": "AML"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Aircraft on Ground (technisch defect, niet luchtwaardig)",
+    "code": "AOG"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Auxiliary Power Unit (hulpmotor voor elektriciteit en airco op de grond)",
+    "code": "APU"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Air Traffic Control (Engelse benaming)",
+    "code": "ATC"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "A dividing wall within the aircraft",
+    "code": "BULKHEAD"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Cabin Attendant",
+    "code": "CA"
+  },
+  {
+    "module": "Passenger",
+    "country": "AIRIMP",
+    "city": "The interior section of an aircraft that is occupied by passengers and cabin crewmembers",
+    "code": "CABIN"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "CARDIOPULMONARY RESUSCITATION - A first aid procedure in which a victim's heartbeat and breathing are manually supported by another individual",
+    "code": "CPR"
+  },
+  {
+    "module": "Meals",
+    "country": "AIRIMP",
+    "city": "The hot meals for the meal tray",
+    "code": "CASSEROLES"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Cabin Crew",
+    "code": "CC"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Cabin Instruction Manual",
+    "code": "CIM"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Cabin Maintenance Log, logboek van vliegtuig waar de defecten van de cabine in vermeld staan",
+    "code": "CML"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "A cockpit (a.k.a. flight deck) is the area, usually near the front of an aircraft from which the pilots control the aircraft",
+    "code": "COCKPIT"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Captain",
+    "code": "CPT"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Child Restraint Device",
+    "code": "CRD"
+  },
+  {
+    "module": "Operations",
+    "country": "AIRIMP",
+    "city": "Any person who is assigned to perform duties on board an aircraft during flight time",
+    "code": "CREWMEMBER"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Flight phase when the aircraft levels after climb and before descent",
+    "code": "CRUISE"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Demonstration",
+    "code": "DEMO"
+  },
+  {
+    "module": "Safety",
+    "country": "AIRIMP",
+    "city": "An emergency landing into water",
+    "code": "DITCHING"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Flight, de vlucht",
+    "code": "FLT"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "The body of an aircraft (excluding the wings and tail)",
+    "code": "FUSELAGE"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Forward part of the cabin, voorste gedeelte van een vliegtuig",
+    "code": "FWD"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Halon - An extinguishing agent",
+    "code": "HAL"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Heat Escape Lessening Posture",
+    "code": "HELP"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "International Air Transport Association",
+    "code": "IATA"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "International Civil Aviation Organization",
+    "code": "ICAO"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Inoperative",
+    "code": "INOP"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "An (extra) crewmember seat in the cockpit or cabin that authorized personnel may occupy during a flight",
+    "code": "JUMPSEAT"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Lavatory (toilet aan boord)",
+    "code": "LAV"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Life Saving Appliances",
+    "code": "LSA"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Minimum Equipment List, lijst met apparatuur die moet werken voor een veilige vlucht",
+    "code": "MEL"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "No Operation",
+    "code": "NOOP"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Operations Control Center",
+    "code": "OCC"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Public Announcement (omroepbericht)",
+    "code": "PA"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Protective Breathing Equipment",
+    "code": "PBE"
+  },
+  {
+    "module": "Passenger",
+    "country": "AIRIMP",
+    "city": "Passenger Information List, passagierslijst",
+    "code": "PIL"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Procedure waarbij a/c achteruit wordt geduwd door een pushback-tractor",
+    "code": "PUSHBACK"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Request",
+    "code": "REQ"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Request Seat",
+    "code": "RQST"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Rejected Take-Off (afgebroken start)",
+    "code": "RTO"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Standard Operating Procedures",
+    "code": "SOP"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "The movement of an aircraft on the ground under its own power",
+    "code": "TAXI"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Total",
+    "code": "TOTL"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Turbulence",
+    "code": "TURB"
+  },
+  {
+    "module": "Passenger",
+    "country": "AIRIMP",
+    "city": "The upstairs passenger deck of a large aircraft",
+    "code": "UPPERDECK"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Weather",
+    "code": "WX"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Extra Crew die meegaat op vlucht, bijvoorbeeld een trainer",
+    "code": "XXSAC"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Deadheading crew",
+    "code": "XXDHC"
+  },
+  {
+    "module": "Safety",
+    "country": "AIRIMP",
+    "city": "Emergency Locator Transmitter",
+    "code": "ELT"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "First Aid Kit",
+    "code": "FAK"
+  },
+  {
+    "module": "Safety",
+    "country": "AIRIMP",
+    "city": "Fire Proof Gloves",
+    "code": "FPG"
+  },
+  {
+    "module": "Safety",
+    "country": "AIRIMP",
+    "city": "Medical Kit",
+    "code": "MK"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Oxygen",
+    "code": "OXYG"
+  },
+  {
+    "module": "General",
+    "country": "AIRIMP",
+    "city": "Quick Access Light",
+    "code": "QAL"
+  }
+]
