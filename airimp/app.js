@@ -41,11 +41,11 @@ function startGame(){
   i=0; 
   time=60;
 
-timer = setInterval(tick,1000);
-initTilt();
-show();
+  timer=setInterval(tick,1000);
 
-
+  initTilt();  
+  show();      
+}
 
 function tick(){
   time--;
