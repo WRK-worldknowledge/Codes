@@ -47,8 +47,6 @@ function startGame(){
   show();      
 }
 
-}
-
 function tick(){
   time--;
   document.getElementById('timer').innerText=`Time: ${time}s | Score: ${score}`;
@@ -79,7 +77,4 @@ function end(){
   document.getElementById('game').classList.add('hidden');
   document.getElementById('end').classList.remove('hidden');
   document.getElementById('score').innerText=`Final score: ${score}`;
-}
-
-
 }
