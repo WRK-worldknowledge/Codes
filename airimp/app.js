@@ -16,26 +16,33 @@ fetch('iata.json')
 
     const mods = [...new Set(d.map(x => x.module))];
     const c = document.getElementById('modules');
-    c.innerHTML = "";
+    if (!c) return;
 
+    c.innerHTML = "";
     mods.forEach(m => {
       c.innerHTML += `<label><input type="checkbox" value="${m}" checked> ${m}</label>`;
     });
   });
 
-// Mode selector
+// Mode
 function setMode(m) {
   mode = m;
-  document.getElementById('modules').style.display = m === 'exam' ? 'none' : 'block';
+  const modules = document.getElementById('modules');
+  if (modules) modules.style.display = m === 'exam' ? 'none' : 'block';
 }
 
-// Game type selector
+// Game type
 function setGameType(t) {
   gameType = t;
 }
 
 // Start game
 function startGame() {
+  if (!allData || allData.length === 0) {
+    alert("Loading data, try again");
+    return;
+  }
+
   const checked = [...document.querySelectorAll('#modules input:checked')].map(x => x.value);
 
   gameData = mode === 'exam'
@@ -80,20 +87,20 @@ function show() {
   document.getElementById('code').innerText = text;
 }
 
-// Good
+// Correct
 function good() {
   score++;
   i++;
   show();
 }
 
-// Skip
+// Wrong
 function skip() {
   i++;
   show();
 }
 
-// End
+// End game
 function end() {
   clearInterval(timer);
   document.getElementById('game').classList.add('hidden');
@@ -101,7 +108,7 @@ function end() {
   document.getElementById('score').innerText = `Final score: ${score}`;
 }
 
-// Tilt — STABLE VERSION
+// STABLE TILT — OPEN DAY SAFE
 function initTilt() {
   let lastTrigger = 0;
 
