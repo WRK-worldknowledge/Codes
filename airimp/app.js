@@ -44,8 +44,7 @@ function startGame(){
  score=0; i=0; time=60;
  timer=setInterval(tick,1000);
  initTilt();
-show();
-
+showCountdownThenStart();
 }
 
 function tick(){
@@ -161,6 +160,30 @@ function handleTilt(e){
    tiltLocked = true;
    skip();
  }
+  function showCountdownThenStart() {
+  let count = 5;
+  const codeEl = document.getElementById('code');
+
+  codeEl.innerText = "Starting in 5";
+
+  const interval = setInterval(() => {
+    count--;
+
+    if (count > 0) {
+      codeEl.innerText = "Starting in " + count;
+      if (navigator.vibrate) navigator.vibrate(15);
+    } else {
+      clearInterval(interval);
+      codeEl.innerText = "GO!";
+      if (navigator.vibrate) navigator.vibrate([80, 40, 80]);
+
+      setTimeout(() => {
+        show(); // normal game flow resumes
+      }, 500);
+    }
+  }, 1000);
+}
+
 }
 
 
