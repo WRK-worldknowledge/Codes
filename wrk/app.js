@@ -1,8 +1,6 @@
-
 let allData=[], gameData=[], i=0, score=0, time=60, timer;
 let mode='train', gameType='code-to-city';
 let tiltState='neutral';
-let countdownActive = false;
 
 fetch('iata.json').then(r=>r.json()).then(d=>{
   allData=d;
