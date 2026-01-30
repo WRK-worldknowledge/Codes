@@ -1,16 +1,26 @@
+let dataLoaded = false;
 let allData=[], gameData=[], i=0, score=0, time=60, timer;
 let mode='train', gameType='code-to-city';
 let tiltState='neutral';
 
-fetch('iata.json').then(r=>r.json()).then(d=>{
-  allData=d;
-  const mods=[...new Set(d.map(x=>x.module))];
-  const c=document.getElementById('modules');
-  c.innerHTML="";
-  mods.forEach(m=>{
-    c.innerHTML+=`<label><input type="checkbox" value="${m}" checked> ${m}</label>`;
+fetch('iata.json')
+  .then(r => r.json())
+  .then(d => {
+    allData = d;
+    dataLoaded = true;
+
+    const mods = [...new Set(d.map(x => x.module))];
+    const c = document.getElementById('modules');
+    c.innerHTML = "";
+
+    mods.forEach(m => {
+      c.innerHTML += `<label><input type="checkbox" value="${m}" checked> ${m}</label>`;
+    });
+  })
+  .catch(err => {
+    console.error("Failed to load iata.json", err);
   });
-});
+
 
 function setMode(m){
   mode=m;
