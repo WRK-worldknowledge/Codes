@@ -79,33 +79,4 @@ function end(){
   document.getElementById('score').innerText=`Final score: ${score}`;
 }
 
-// SAFE COUNTDOWN
-function runSafeCountdown(){
-  if(countdownActive) return;
-  countdownActive=true;
-
-  let count=5;
-  const codeEl=document.getElementById('code');
-  const tiltBackup = window.handleTilt;
-  window.handleTilt = ()=>{};
-
-  codeEl.innerText="Starting in 5";
-
-  const interval=setInterval(()=>{
-    count--;
-    if(count>0){
-      codeEl.innerText="Starting in "+count;
-      if(navigator.vibrate) navigator.vibrate(15);
-    } else {
-      clearInterval(interval);
-      codeEl.innerText="GO!";
-      if(navigator.vibrate) navigator.vibrate([80,40,80]);
-
-      setTimeout(()=>{
-        window.handleTilt = tiltBackup;
-        countdownActive=false;
-        show();
-      },500);
-    }
-  },1000);
 }
