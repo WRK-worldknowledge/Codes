@@ -62,7 +62,9 @@ function startGame() {
 
   timer = setInterval(tick, 1000);
 
+  requestTiltPermission().then(() => {
   initTilt();
+});
   show();
 }
 
@@ -107,30 +109,52 @@ function end() {
   document.getElementById('end').classList.remove('hidden');
   document.getElementById('score').innerText = `Final score: ${score}`;
 }
+function requestTiltPermission() {
+  return new Promise(resolve => {
+    if (typeof DeviceOrientationEvent !== 'undefined' &&
+        typeof DeviceOrientationEvent.requestPermission === 'function') {
 
+      DeviceOrientationEvent.requestPermission()
+        .then(permissionState => {
+          resolve(permissionState === 'granted');
+        })
+        .catch(() => resolve(false));
+
+    } else {
+      resolve(true);
+    }
+  });
+}
 // STABLE TILT — OPEN DAY SAFE
 function initTilt() {
   let lastTrigger = 0;
+  tiltState = 'neutral';
 
   window.addEventListener('deviceorientation', e => {
+    if (!e.gamma && e.gamma !== 0) return;
+
     const gamma = e.gamma;
     const now = Date.now();
 
-    if (now - lastTrigger < 700) return;
+    // cooldown
+    if (now - lastTrigger < 800) return;
 
-    if (gamma > 35 && tiltState !== 'right') {
+    // RIGHT = GOOD
+    if (gamma > 30 && tiltState !== 'right') {
       tiltState = 'right';
       lastTrigger = now;
       good();
     }
 
-    if (gamma < -35 && tiltState !== 'left') {
+    // LEFT = WRONG
+    if (gamma < -30 && tiltState !== 'left') {
       tiltState = 'left';
       lastTrigger = now;
       skip();
     }
 
-    if (gamma > -15 && gamma < 15) {
+    // Reset neutral
+    if (gamma > -12 && gamma < 12) {
       tiltState = 'neutral';
     }
   });
