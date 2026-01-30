@@ -49,10 +49,19 @@ function tick(){
 }
 
 function show(){
- if(i>=gameData.length){i=0;}
- const item=gameData[i];
- document.getElementById('code').innerText = (gameType==='city-to-code') ? item.city : item.code;
+  if (!gameData || gameData.length === 0) return;
+
+  if (i >= gameData.length) i = 0;
+
+  const item = gameData[i];
+
+  const text = (gameType === 'city-to-code')
+    ? item.code
+    : item.city;
+
+  document.getElementById('code').innerText = text;
 }
+
 
 function flash(type){
  document.body.classList.add(type);
