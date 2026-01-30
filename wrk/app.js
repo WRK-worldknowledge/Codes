@@ -25,17 +25,27 @@ function setGameType(t){
 
 function startGame(){
   const checked=[...document.querySelectorAll('#modules input:checked')].map(x=>x.value);
-  gameData = mode==='exam' ? allData.slice() : allData.filter(x=>checked.includes(x.module));
+
+  gameData = mode==='exam'
+    ? allData.slice()
+    : allData.filter(x=>checked.includes(x.module));
+
   if(gameData.length===0) gameData = allData.slice();
+
   gameData.sort(()=>Math.random()-0.5);
 
   document.getElementById('start').classList.add('hidden');
   document.getElementById('game').classList.remove('hidden');
 
-  score=0; i=0; time=60;
-timer = setInterval(tick,1000);
-initTilt();
-show();
+  score=0; 
+  i=0; 
+  time=60;
+
+  timer=setInterval(tick,1000);
+
+  initTilt();  
+  show();      
+}
 
 }
 
