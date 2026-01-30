@@ -41,11 +41,10 @@ function startGame(){
   i=0; 
   time=60;
 
-  timer=setInterval(tick,1000);
+timer = setInterval(tick,1000);
+initTilt();
+show();
 
-  initTilt();           // ✅ tilt terug
-  runSafeCountdown();   // ✅ countdown start
-}
 
 
 function tick(){
