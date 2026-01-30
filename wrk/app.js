@@ -33,9 +33,10 @@ function startGame(){
   document.getElementById('game').classList.remove('hidden');
 
   score=0; i=0; time=60;
-  timer=setInterval(tick,1000);
+timer = setInterval(tick,1000);
+initTilt();
+show();
 
-  runSafeCountdown();
 }
 
 function tick(){
