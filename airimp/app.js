@@ -44,7 +44,8 @@ function startGame(){
  score=0; i=0; time=60;
  timer=setInterval(tick,1000);
  initTilt();
-startCountdown();
+show();
+
 }
 
 function tick(){
