@@ -21,9 +21,6 @@ fetch('iata.json')
     mods.forEach(m => {
       c.innerHTML += `<label><input type="checkbox" value="${m}" checked> ${m}</label>`;
     });
-  })
-  .catch(err => {
-    console.error("Failed to load iata.json", err);
   });
 
 // Mode selector
@@ -45,9 +42,7 @@ function startGame() {
     ? allData.slice()
     : allData.filter(x => checked.includes(x.module));
 
-  if (gameData.length === 0) {
-    gameData = allData.slice();
-  }
+  if (gameData.length === 0) gameData = allData.slice();
 
   gameData.sort(() => Math.random() - 0.5);
 
@@ -85,20 +80,20 @@ function show() {
   document.getElementById('code').innerText = text;
 }
 
-// Good answer
+// Good
 function good() {
   score++;
   i++;
   show();
 }
 
-// Skip / wrong
+// Skip
 function skip() {
   i++;
   show();
 }
 
-// End game
+// End
 function end() {
   clearInterval(timer);
   document.getElementById('game').classList.add('hidden');
@@ -106,35 +101,30 @@ function end() {
   document.getElementById('score').innerText = `Final score: ${score}`;
 }
 
-// Tilt controls
+// Tilt — STABLE VERSION
 function initTilt() {
-  let lastTriggerTime = 0;
+  let lastTrigger = 0;
 
   window.addEventListener('deviceorientation', e => {
     const gamma = e.gamma;
     const now = Date.now();
 
-    // Cooldown: max 1 actie per 800ms
-    if (now - lastTriggerTime < 800) return;
+    if (now - lastTrigger < 700) return;
 
-    // Tilt RIGHT = good
-    if (gamma > 30 && tiltState !== 'right') {
+    if (gamma > 35 && tiltState !== 'right') {
       tiltState = 'right';
-      lastTriggerTime = now;
+      lastTrigger = now;
       good();
     }
 
-    // Tilt LEFT = skip
-    if (gamma < -30 && tiltState !== 'left') {
+    if (gamma < -35 && tiltState !== 'left') {
       tiltState = 'left';
-      lastTriggerTime = now;
+      lastTrigger = now;
       skip();
     }
 
-    // Neutral reset zone
     if (gamma > -15 && gamma < 15) {
       tiltState = 'neutral';
     }
   });
 }
-
