@@ -1,3 +1,4 @@
+console.log("ALL DATA LENGTH:", allData.length);
 let dataLoaded = false;
 let allData=[], gameData=[], i=0, score=0, time=60, timer;
 let mode='train', gameType='code-to-city';
@@ -31,28 +32,18 @@ function setGameType(t){
   gameType=t;
 }
 
-function startGame(){
-  const checked=[...document.querySelectorAll('#modules input:checked')].map(x=>x.value);
+function show(){
+  if (!gameData || gameData.length === 0) return;
 
-  gameData = mode==='exam'
-    ? allData.slice()
-    : allData.filter(x=>checked.includes(x.module));
+  if (i >= gameData.length) i = 0;
 
-  if(gameData.length===0) gameData = allData.slice();
+  const item = gameData[i];
 
-  gameData.sort(()=>Math.random()-0.5);
+  const text = (gameType === 'city-to-code')
+    ? item.code
+    : item.city;
 
-  document.getElementById('start').classList.add('hidden');
-  document.getElementById('game').classList.remove('hidden');
-
-  score=0; 
-  i=0; 
-  time=60;
-
-  timer=setInterval(tick,1000);
-
-  initTilt();  
-  show();      
+  document.getElementById('code').innerText = text;
 }
 
 function tick(){
