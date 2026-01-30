@@ -108,21 +108,33 @@ function end() {
 
 // Tilt controls
 function initTilt() {
+  let lastTriggerTime = 0;
+
   window.addEventListener('deviceorientation', e => {
     const gamma = e.gamma;
+    const now = Date.now();
 
-    if (gamma > 20 && tiltState !== 'right') {
+    // Cooldown: max 1 actie per 800ms
+    if (now - lastTriggerTime < 800) return;
+
+    // Tilt RIGHT = good
+    if (gamma > 30 && tiltState !== 'right') {
       tiltState = 'right';
+      lastTriggerTime = now;
       good();
     }
 
-    if (gamma < -20 && tiltState !== 'left') {
+    // Tilt LEFT = skip
+    if (gamma < -30 && tiltState !== 'left') {
       tiltState = 'left';
+      lastTriggerTime = now;
       skip();
     }
 
-    if (gamma > -10 && gamma < 10) {
+    // Neutral reset zone
+    if (gamma > -15 && gamma < 15) {
       tiltState = 'neutral';
     }
   });
 }
+
