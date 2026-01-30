@@ -47,4 +47,21 @@ label {
   display: block;
   margin: 8px 0;
 }
+.backBtn {
+  display: inline-block;
+  margin: 12px auto 6px auto;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #F5CA51;
+  text-decoration: none;
+  border: 1px solid rgba(245,202,81,0.4);
+  border-radius: 10px;
+  transition: background .15s ease, transform .1s ease;
+}
+
+.backBtn:hover {
+  background: rgba(245,202,81,0.15);
+  transform: translateY(-1px);
+}
 
